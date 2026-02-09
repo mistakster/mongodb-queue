@@ -1,7 +1,7 @@
 {
   "private": "false",
   "name": "@mistakster/mongodb-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use your existing MongoDB as a local queue",
   "type": "module",
   "main": "./dist/index.js",
