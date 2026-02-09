@@ -18,7 +18,8 @@
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts",
-    "dist/**/*.d.ts.map"
+    "dist/**/*.d.ts.map",
+    "dist/cjs/package.json"
   ],
   "scripts": {
     "build": "tsc && tsc -p tsconfig.cjs.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json",
