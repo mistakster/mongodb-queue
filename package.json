@@ -1,0 +1,51 @@
+{
+  "name": "@mistakster/mongodb-queue",
+  "version": "1.0.0",
+  "description": "Use your existing MongoDB as a local queue",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "dist/**/*.d.ts.map",
+    "src/**/*.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mongodb",
+    "queue",
+    "message-queue",
+    "task-queue",
+    "bun",
+    "nodejs"
+  ],
+  "author": "Andrew Chilton",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mistakster/mongodb-queue"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^16",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "mongodb": ">=4.0.0 <8.0.0"
+  },
+  "engines": {
+    "node": ">=16.20.0"
+  }
+}
